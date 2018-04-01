@@ -1,9 +1,12 @@
 ## Name: David Chen
-## Date: March 10, 2018
-## Class CS372
-## Assignment: Program 2
-## File: ftclient.py
-## Resources: https://stackoverflow.com/questions/11968976/list-files-in-only-the-current-directory
+## 
+## Client side implementation of an SSH File Transfer Protocol. This program connects to ftserver.c 
+## through port_number, and opens a dataport for content transferring 
+## USAGE: python3 ftclient.py <hostname> <port_number> <command> [filename] <dataport>
+## command:
+##	-l: Displays current directory of ftserver.c onto terminal
+##	-g: Saves [filename] into current directory from ftserver.c 
+## Resources: http://beej.us/guide/bgnet
 
 import socket
 import sys

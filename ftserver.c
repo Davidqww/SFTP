@@ -1,12 +1,15 @@
-/*****************************************************************
-** Name: David Chen
-** Date: March 10, 2018
-** Class: CS372
-** Assignment: Program 2
-** File: ftserver.c
-** Resources: http://beej.us/guide/bgnet/
-			  https://stackoverflow.com/questions/2014033/send-and-receive-a-file-in-socket-programming-in-linux-with-c-c-gcc-g
-*****************************************************************/
+/*****************************************************************************************
+Name: David Chen
+
+Server side implementation of SSH File Transfer protocol. This program listens on
+port_number for any incoming connections. Once a connection is received, ftserver.c
+handles the requested command by either sending a list of its current directory or
+a file 
+
+USAGE: ./ftserver <port number>
+
+Resources: http://beej.us/guide/bgnet
+*****************************************************************************************/
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
