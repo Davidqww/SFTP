@@ -6,10 +6,12 @@ Final Project for Computer Networks (CS_372_400_W2018)
 
 ### ftclient.py:
 
-Client side implementation of an SSH File Transfer Protocol. This program connects to ftserver.c through port_number, and opens a dataport for content transferring 
+Client side implementation of an SSH File Transfer Protocol. This program connects to ftserver.c through port_number, and opens a dataport for content transferring. 
+
 
 USAGE: python3 ftclient.py <hostname> <port_number> <command> [filename] <dataport>
 command:
+	
 	-l: Displays current directory of ftserver.c onto terminal
 	-g: Saves [filename] into current directory from ftserver.c 
 
